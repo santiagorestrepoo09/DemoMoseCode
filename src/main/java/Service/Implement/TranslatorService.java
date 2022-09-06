@@ -14,8 +14,6 @@ public class TranslatorService {
 				".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..",
 				"-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", " " };
 		
-		private final Map<String, String> morseToLetters = IntStream.range(0, morse.length).boxed().collect(Collectors.toMap(i -> morse[i], i -> letters[i]));
-		private final Map<String, String> lettersToMorse = IntStream.range(0, letters.length).boxed().collect(Collectors.toMap(i -> letters[i], i -> morse[i]));
 		private List<Integer> amountsZerosList;
 		private List<Integer> amountsList;
 		private int averageZeros = 0;
